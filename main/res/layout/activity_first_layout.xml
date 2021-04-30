@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left">
+
+
+
+        <ImageButton
+            android:id="@+id/dangnhap"
+            android:layout_width="168dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login2" />
+
+    </TableRow>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <View
+            android:id="@+id/bg_circle_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_circle_anim" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="72dp"
+            android:src="@drawable/ailatrieuphu" />
+
+
+
+    </FrameLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#00BCD4" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/button_play" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#2dff8133" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:orientation="vertical">
+        <!--        android:gravity="right">-->
+
+        <ImageButton
+            android:id="@+id/cup"
+            android:layout_width="64dp"
+
+            android:layout_height="64dp"
+            android:layout_marginRight="425dp"
+
+            android:background="@drawable/home_button_archivement" />
+
+        <ImageButton
+            android:id="@+id/btn_about"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/btn_high_score"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/review" />
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/home_button_setting" />
+    </TableRow>
+
+</LinearLayout>
