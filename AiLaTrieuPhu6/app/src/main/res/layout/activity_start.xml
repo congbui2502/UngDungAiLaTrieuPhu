@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/nenaltp"
+
+    tools:context=".MainActivity">
+
+
+
+    //tien thuong
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lncau15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv15"
+                style="@style/tienthuongStyle"
+                android:text="@string/k150000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv14"
+                style="@style/tienthuongStyle"
+                android:text="@string/k85000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv13"
+                style="@style/tienthuongStyle"
+                android:text="@string/k60000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv12"
+                style="@style/tienthuongStyle"
+                android:text="@string/k40000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv11"
+                style="@style/tienthuongStyle"
+                android:text="@string/k30000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv10"
+                style="@style/tienthuongStyle"
+                android:text="@string/k22000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv9"
+                style="@style/tienthuongStyle"
+                android:text="@string/k14000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv8"
+                style="@style/tienthuongStyle"
+                android:text="@string/k10000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv7"
+                style="@style/tienthuongStyle"
+                android:text="@string/k6000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv6"
+                style="@style/tienthuongStyle"
+                android:text="@string/k3000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/tienthuongStyle"
+                android:text="@string/k2000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/tienthuongStyle"
+                android:text="@string/k1000">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/tienthuongStyle"
+                android:text="@string/k600">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/tienthuongStyle"
+                android:text="@string/k400">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lncau1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/testlayout"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/tienthuongStyle"
+                android:text="@string/k200">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    //cau hoi , cau tl
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:weightSum="8"
+        android:orientation="vertical">
+
+        //logo
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="15dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ailatrieuphu"/>
+
+        </LinearLayout>
+
+        //cau hoi, dong ho dem nguoc
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStart"
+                style="@style/tienthuongStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+
+                android:background="@drawable/sansang_layout"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+
+                android:paddingRight="40dp"
+                android:paddingBottom="10dp"
+                android:text="Sẵn Sàng"
+                android:textColor="#ffff00"
+                android:textSize="30dp"
+                android:textStyle="bold"></Button>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
