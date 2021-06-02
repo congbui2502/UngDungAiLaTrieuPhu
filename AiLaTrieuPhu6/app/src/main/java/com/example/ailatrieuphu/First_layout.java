@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class First_layout extends AppCompatActivity {
 
     private ImageButton imageButton;
     private TextView tvLogon;
+    private ImageView userimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +21,16 @@ public class First_layout extends AppCompatActivity {
         setContentView(R.layout.activity_first_layout);
         imageButton=findViewById(R.id.btn_play);
         tvLogon=findViewById(R.id.dangnhap);
-
+        userimage =findViewById(R.id.user);
         Intent intent=getIntent();
         if(intent.getStringExtra("login")!=null)
         {
             String login = intent.getStringExtra("login");
-            tvLogon.setBackgroundResource(R.drawable.sansang_click);
+//            tvLogon.setBackgroundResource(R.color.white
+//            );
+            userimage.setBackgroundResource(R.drawable.user2);
+
+
             tvLogon.setText(login);
         }
 
