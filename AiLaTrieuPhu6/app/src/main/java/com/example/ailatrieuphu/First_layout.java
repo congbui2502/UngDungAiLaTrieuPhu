@@ -1,5 +1,6 @@
 package com.example.ailatrieuphu;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,23 +14,28 @@ public class First_layout extends AppCompatActivity {
 
     private ImageButton imageButton;
     private TextView tvLogon;
-    private ImageView userimage;
+
+    private ImageView image_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
+
+
         setContentView(R.layout.activity_first_layout);
         imageButton=findViewById(R.id.btn_play);
         tvLogon=findViewById(R.id.dangnhap);
-        userimage =findViewById(R.id.user);
+        image_user = findViewById(R.id.image_user);
+
         Intent intent=getIntent();
         if(intent.getStringExtra("login")!=null)
         {
             String login = intent.getStringExtra("login");
-//            tvLogon.setBackgroundResource(R.color.white
-//            );
-            userimage.setBackgroundResource(R.drawable.user2);
 
+
+            tvLogon.setBackgroundResource(R.drawable.vientron);
 
             tvLogon.setText(login);
         }
@@ -38,8 +44,12 @@ public class First_layout extends AppCompatActivity {
         tvLogon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(First_layout.this,Logon.class);
+                Intent intent=new Intent(First_layout.this,InforActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+                finish();
             }
         });
 

@@ -1,5 +1,6 @@
 package com.example.ailatrieuphu;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         tienthuongcau1=findViewById(R.id.lncau1);
         dsTienThuong.add(tienthuongcau1);

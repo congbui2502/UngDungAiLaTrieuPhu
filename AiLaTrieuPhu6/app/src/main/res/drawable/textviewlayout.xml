@@ -4,17 +4,17 @@
     android:shape="rectangle">
 
     <corners
-        android:endColor="#1116a6"
+        android:endColor="#FF6200EE"
         android:radius="90dp" />
 
     <gradient
         android:angle="45"
 
-        android:endColor="#1116a6"
+        android:endColor="#FF6200EE"
         android:centerColor="#8dedfe"
 
 
-        android:startColor="#1116a6"
+        android:startColor="#FF6200EE"
         android:type="linear" />
 
     <!--If your shape requires only one solid color-->
@@ -26,8 +26,8 @@
     <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
     to add dashes to your stroke-->
     <stroke
-        android:width="4dp"
-        android:color="#64c8fc" />
+        android:width="3dp"
+        android:color="#FACC2E" />
 
     <!--If you want to add padding-->
     <!-- <padding

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="windowNoTitle">true</item>
-
+        <item name="windowNoTitle">false</item>
+        <item name="actionBarTheme">@style/Theme.AppCompat.NoActionBar</item>
 
     </style>
 
@@ -23,6 +23,9 @@
         <item name="background">@drawable/testlayout</item>
 
     </style>
-
+    <style name="Theme.AppCompat.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>
 
 </resources>

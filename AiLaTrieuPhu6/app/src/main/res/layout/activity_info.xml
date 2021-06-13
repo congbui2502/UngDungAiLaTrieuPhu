@@ -19,7 +19,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    >-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="INFOR USER YOU"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textColor="@color/cautl"-->
+<!--        android:shadowColor="@color/grey_font"-->
+<!--        android:shadowDx="-20"-->
+<!--        android:shadowDy="-20"-->
+<!--        android:shadowRadius="20"-->
+<!--        android:textStyle="bold"-->
+<!--        android:paddingBottom="30dp">-->
 
+<!--    </TextView>-->
+
+<!--</LinearLayout>-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,32 +47,35 @@
 
             <TextView
 
-                android:layout_width="141dp"
+                android:layout_width="wrap_content"
                 android:layout_height="35dp"
-                android:text="YourEmail:"
-
-                android:textSize="30dp"
-                android:textColor="@color/white"
-
-                android:textStyle="italic"
                 android:shadowColor="@color/black"
+
                 android:shadowDx="-20"
                 android:shadowDy="-20"
+
                 android:shadowRadius="10"
+                android:text="YourEmail:"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="italic"
 
 
                 ></TextView>
 
-            <EditText
-                android:id="@+id/email"
+            <TextView
+                android:id="@+id/youremail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/grey_font"
-                android:hint="....Vui Lòng Nhập Email......"
-                android:textStyle="italic"
+
+                android:textStyle="bold"
                 android:textAlignment="center"
 
-                ></EditText>
+                android:textSize="24dp"
+
+
+                ></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,35 +83,35 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp">
 
-            <TextView
+<!--            <TextView-->
 
-                android:layout_width="141dp"
-                android:layout_height="35dp"
-                android:text="PassWord:"
+<!--                android:layout_width="141dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:text="PassWord:"-->
 
-                android:textSize="30dp"
-                android:textColor="@color/white"
+<!--                android:textSize="30dp"-->
+<!--                android:textColor="@color/white"-->
 
-                android:textStyle="italic"
-                android:shadowColor="@color/black"
-                android:shadowDx="-20"
-                android:shadowDy="-20"
-                android:shadowRadius="10"
+<!--                android:textStyle="italic"-->
+<!--                android:shadowColor="@color/black"-->
+<!--                android:shadowDx="-20"-->
+<!--                android:shadowDy="-20"-->
+<!--                android:shadowRadius="10"-->
 
 
-                ></TextView>
+<!--                ></TextView>-->
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/grey_font"
-                android:password="true"
-                android:hint="....Vui Lòng Nhập Passwords......"
-                android:textStyle="italic"
-                android:textAlignment="center"
+<!--            <TextView-->
+<!--                android:id="@+id/password"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/grey_font"-->
+<!--                android:password="true"-->
 
-                ></EditText>
+<!--                android:textStyle="italic"-->
+<!--                android:textAlignment="center"-->
+
+<!--                ></TextView>-->
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,15 +137,16 @@
 
                 ></TextView>
 
-            <EditText
-                android:id="@+id/phone"
+            <TextView
+                android:id="@+id/telphone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/grey_font"
-                android:hint="....Vui Lòng Nhập phone......"
-                android:textStyle="italic"
+                android:textStyle="bold"
                 android:textAlignment="center"
-                ></EditText>
+
+                android:textSize="24dp"
+                > </TextView>
         </LinearLayout>
 <!--        <LinearLayout-->
 <!--            android:layout_width="match_parent"-->
@@ -150,11 +173,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/signup"
+                android:id="@+id/Logout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="100dp"
-                android:text="sign up"
+                android:text="Logout"
                 android:textSize="24dp"></Button>
 
             <Button

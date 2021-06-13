@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/home_background"
+
+    android:background="@drawable/mainbr"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <TableRow
@@ -13,20 +14,23 @@
         android:gravity="left">
 
 
-
         <ImageView
-            android:id="@+id/user"
+            android:id="@+id/image_user"
             android:layout_width="50dp"
             android:layout_height="50dp"
 
-
+            android:background="@drawable/user2"
             />
+
 
         <TextView
             android:id="@+id/dangnhap"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/user2" />
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textAlignment="gravity"
+
+            />
 
     </TableRow>
     <FrameLayout
@@ -42,9 +46,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:padding="72dp"
-            android:src="@drawable/ailatrieuphu" />
+            />
 
 
 
@@ -65,7 +69,7 @@
 
         <ImageButton
             android:id="@+id/btn_play"
-            android:layout_width="wrap_content"
+            android:layout_width="220dp"
             android:layout_height="match_parent"
 
             android:background="@drawable/button_play" />

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AiLaTrieuPhu">
 
-        <activity android:name=".First_layout"
+        <activity android:name=".Logon"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
 
         </activity>
 
-        <activity android:name=".Logon"
+        <activity android:name=".First_layout"
             android:screenOrientation="landscape"/>
 
         <activity
@@ -35,6 +35,16 @@
 
         <activity
             android:name=".StartActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".InforActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".ForgetPassWords"
             android:screenOrientation="landscape">
 
         </activity>

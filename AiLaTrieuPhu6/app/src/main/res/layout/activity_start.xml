@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@drawable/nenaltp"
+    android:background="@drawable/mainbr"
 
     tools:context=".MainActivity">
 
@@ -308,7 +308,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/ailatrieuphu"/>
+               />
 
         </LinearLayout>
 

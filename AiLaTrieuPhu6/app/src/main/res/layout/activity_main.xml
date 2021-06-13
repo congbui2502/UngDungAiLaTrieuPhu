@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@drawable/nenaltp"
+    android:background="@mipmap/home_background"
 
     tools:context=".MainActivity">
 
@@ -305,9 +305,9 @@
 
             <ImageView
                android:id="@+id/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ailatrieuphu"></ImageView>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mainbr"></ImageView>
 
         </LinearLayout>
 
@@ -320,45 +320,49 @@
             android:orientation="horizontal"
             android:layout_marginBottom="20dp"
             android:weightSum="15">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"></LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"></LinearLayout>-->
 
 
             //cau hoi
 
+
+            //dong ho dem nguoc
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/textviewlayout"
-                android:layout_weight="12">
+                android:layout_weight="14"
+                android:background="@drawable/textviewlayout">
+
                 <TextView
                     android:id="@+id/tvCauhoi"
-                    android:layout_width="match_parent"
+                    android:layout_width="500dp"
                     android:layout_height="match_parent"
-                    android:textSize="15sp"
-                    android:textColor="@color/white"></TextView>
+                    android:layout_marginLeft="15dp"
+                    android:width="300dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"></TextView>
 
 
             </LinearLayout>
 
-
-            //dong ho dem nguoc
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2">
+                android:layout_weight="3">
+
                 <TextView
                     android:id="@+id/dongHoDemNguoc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="30"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:text="30"></TextView>
+                    android:textSize="30sp"></TextView>
 
             </LinearLayout>
-
 
 
         </LinearLayout>
@@ -389,6 +393,7 @@
                     android:id="@+id/cauA"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+
 
                     android:rotationX="0"
                     android:text="@string/cauA"
@@ -455,6 +460,7 @@
                     android:layout_height="match_parent"
                     android:textSize="15sp"
                     android:text="@string/cauC"
+
                     android:textColor="@color/cautl"></TextView>
 
             </LinearLayout>
@@ -476,6 +482,7 @@
 
                     android:text="@string/cauD"
                     android:textSize="15sp"
+
                     android:textColor="@color/cautl"></TextView>
 
             </LinearLayout>
