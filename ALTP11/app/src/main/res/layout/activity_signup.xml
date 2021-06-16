@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+
+                android:layout_width="141dp"
+                android:layout_height="35dp"
+                android:text="YourEmail:"
+
+                android:textSize="30dp"
+                android:textColor="@color/white"
+
+                android:textStyle="italic"
+                android:shadowColor="@color/black"
+                android:shadowDx="-20"
+                android:shadowDy="-20"
+                android:shadowRadius="10"
+
+
+                ></TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_font"
+                android:hint="....Vui Lòng Nhập Email......"
+                android:textStyle="italic"
+                android:textAlignment="center"
+
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+
+                android:layout_width="141dp"
+                android:layout_height="35dp"
+                android:text="PassWord:"
+
+                android:textSize="30dp"
+                android:textColor="@color/white"
+
+                android:textStyle="italic"
+                android:shadowColor="@color/black"
+                android:shadowDx="-20"
+                android:shadowDy="-20"
+                android:shadowRadius="10"
+
+
+                ></TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_font"
+                android:password="true"
+                android:hint="....Vui Lòng Nhập Passwords......"
+                android:textStyle="italic"
+                android:textAlignment="center"
+
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+
+                android:layout_width="141dp"
+                android:layout_height="35dp"
+                android:text="TelPhone:"
+
+                android:textSize="30dp"
+                android:textColor="@color/white"
+
+                android:textStyle="italic"
+                android:shadowColor="@color/black"
+                android:shadowDx="-20"
+                android:shadowDy="-20"
+                android:shadowRadius="10"
+
+
+                ></TextView>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_font"
+                android:hint="....Vui Lòng Nhập phone......"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                ></EditText>
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Repass:"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="30dp"-->
+<!--                android:textStyle="bold"></TextView>-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"></EditText>-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:text="sign up"
+                android:textSize="24dp"></Button>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:textSize="24dp"
+                >
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
