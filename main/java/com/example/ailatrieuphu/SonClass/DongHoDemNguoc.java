@@ -12,6 +12,11 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class DongHoDemNguoc {
+    public boolean isFlag() {
+        return flag;
+    }
+
+    private boolean flag=true;
     private  ArrayList<TextView> dscauhoi=new ArrayList<TextView>();
 
     private View.OnClickListener clickListener=new View.OnClickListener() {
@@ -47,6 +52,11 @@ public class DongHoDemNguoc {
             public void onTick(long l) {
                 String sDuration=(l)/1000+"";
                 textView.setText(sDuration);
+
+                if(l==0)
+                {
+                    flag=false;
+                }
             }
 
             @Override
@@ -60,10 +70,10 @@ public class DongHoDemNguoc {
 
 
     public  void  setBackgroundTienThuong(ArrayList<LinearLayout> dsTienThuong){
-        new CountDownTimer(3000,200) {
+        new CountDownTimer(7500,500) {
             @Override
             public void onTick(long millisUntilFinished) {
-                int soDem= (int) (3000-millisUntilFinished)/200;
+                int soDem= (int) (7500-millisUntilFinished)/500;
                 for(int i=0;i<dsTienThuong.size();i++)
                 {
                     if(i==soDem){
@@ -89,10 +99,10 @@ public class DongHoDemNguoc {
 
                 }
 //
-                new CountDownTimer(2400, 800) {
+                new CountDownTimer(1500, 500) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        int soDem=(int) (2400-millisUntilFinished)/800;
+                        int soDem=(int) (1500-millisUntilFinished)/900;
 
                         dsTienThuong.get((soDem+1)*5-1).setBackgroundResource(R.drawable.ketquachon);
 

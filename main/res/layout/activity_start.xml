@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/nenaltp"
+    android:weightSum="11"
 
     tools:context=".MainActivity">
 
@@ -16,7 +17,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:weightSum="15"
         android:orientation="vertical">
 
@@ -290,7 +291,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4"
+        android:layout_weight="8"
         android:weightSum="8"
         android:orientation="vertical">
 
@@ -305,10 +306,11 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_marginTop="15dp"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:src="@drawable/ailatrieuphu"/>
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/ailatrieuphu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
@@ -319,22 +321,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_gravity="center">
 
             <Button
                 android:id="@+id/btnStart"
-                style="@style/tienthuongStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="210dp"
+                android:layout_marginTop="20dp"
+
+
 
                 android:background="@drawable/sansang_layout"
-                android:gravity="center"
-                android:paddingLeft="30dp"
 
-                android:paddingRight="40dp"
-                android:paddingBottom="10dp"
                 android:text="Sẵn Sàng"
                 android:textColor="#ffff00"
                 android:textSize="30dp"
@@ -342,6 +340,88 @@
 
 
         </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    //su tro giup
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        //50/50
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+
+            <ImageView
+                android:id="@+id/trogiupnamnam"
+                android:background="@mipmap/namnam_uncheck"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        //goi dien thoai cho nguoi than
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <ImageView
+                android:id="@+id/trogiupgoidienthoai"
+                android:background="@mipmap/phone_nochecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        //hoi y kien khan gia trong truong quay
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <ImageView
+                android:id="@+id/trogiuphoiykien"
+                android:background="@mipmap/hoiykien_ischecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        //tu van tai cho
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <ImageView
+                android:id="@+id/trogiuptuvantaicho"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
 
 
 

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/nenaltp"
+    android:weightSum="11"
 
     tools:context=".MainActivity">
 
@@ -16,7 +17,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:weightSum="15"
         android:orientation="vertical">
 
@@ -290,7 +291,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4"
+        android:layout_weight="8"
         android:weightSum="8"
         android:orientation="vertical">
 
@@ -387,11 +388,12 @@
 
                 <TextView
                     android:id="@+id/cauA"
+                    android:hint="A"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
 
                     android:rotationX="0"
-                    android:text="@string/cauA"
+
                     android:textColor="@color/cautl"
                     android:textSize="15sp"></TextView>
 
@@ -405,9 +407,10 @@
                 android:layout_weight="6">
                 <TextView
                     android:id="@+id/cauB"
+                    android:hint="B"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/cauB"
+
 
                     android:textSize="15sp"
                     android:textColor="@color/cautl"></TextView>
@@ -450,11 +453,11 @@
                 android:layout_weight="6">
                 <TextView
                     android:id="@+id/cauC"
-
+                    android:hint="C"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp"
-                    android:text="@string/cauC"
+
                     android:textColor="@color/cautl"></TextView>
 
             </LinearLayout>
@@ -463,6 +466,7 @@
             //cau tl d
             <LinearLayout
                 android:id="@+id/cautlD"
+
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/textviewlayout"
@@ -473,8 +477,8 @@
                     android:id="@+id/cauD"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:hint="D"
 
-                    android:text="@string/cauD"
                     android:textSize="15sp"
                     android:textColor="@color/cautl"></TextView>
 
@@ -504,6 +508,88 @@
 
 
     </LinearLayout>
+
+    //su tro giup
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        //50/50
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:padding="10px">
+
+            <Button
+                android:id="@+id/trogiupnamnam"
+                android:background="@mipmap/namnam_uncheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+        //goi dien thoai cho nguoi than
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <Button
+                android:id="@+id/trogiupgoidienthoai"
+                android:background="@mipmap/phone_nochecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        //hoi y kien khan gia trong truong quay
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <Button
+                android:id="@+id/trogiuphoiykien"
+                android:background="@mipmap/hoiykien_ischecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        //tu van tai cho
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10px">
+            <Button
+                android:id="@+id/trogiuptuvantaicho"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
 
 
 

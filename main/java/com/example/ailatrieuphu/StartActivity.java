@@ -3,12 +3,16 @@ package com.example.ailatrieuphu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,10 +23,18 @@ public class StartActivity extends AppCompatActivity {
 
     private ArrayList<LinearLayout> dsTienThuong=new ArrayList<LinearLayout>();
 
+    private ImageView namnam,goidienthoai,hoiykienkhangia,tuvantaicho;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+        Log.d("AAA","Start onCreate");
+
+
+        //Lai Van Sam mo dau
+        MediaPlayer cb=MediaPlayer.create(StartActivity.this,R.raw.ailatrieuphu);
+        cb.start();
 
         btnStart=findViewById(R.id.btnStart);
 
@@ -57,10 +69,55 @@ public class StartActivity extends AppCompatActivity {
         tienthuongcau15=findViewById(R.id.lncau15);
         dsTienThuong.add(tienthuongcau15);
 
-        new CountDownTimer(3000,200) {
+        //tham chieu su tro giup
+        namnam=findViewById(R.id.trogiupnamnam);
+        goidienthoai=findViewById(R.id.trogiupgoidienthoai);
+        hoiykienkhangia=findViewById(R.id.trogiuphoiykien);
+        tuvantaicho=findViewById(R.id.trogiuptuvantaicho);
+
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //dung phat nhac
+                cb.stop();
+                Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        btnStart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                //tat nhac
+//
+//                cb.stop();
+//                Intent intent=new Intent(StartActivity.this,MainActivity.class);
+//                startActivity(intent);
+////                new CountDownTimer(500, 500) {
+////                    @Override
+////                    public void onTick(long millisUntilFinished) {
+////                        v.setBackgroundResource(R.drawable.sansang_click);
+////
+////                    }
+////
+////                    @Override
+////                    public void onFinish() {
+////                        v.setBackgroundResource(R.drawable.sansang_layout);
+////
+////                    }
+////                }.start();
+//
+//
+//            }
+//        });
+
+
+        new CountDownTimer(15000,250) {
             @Override
             public void onTick(long millisUntilFinished) {
-                int soDem= (int) (3000-millisUntilFinished)/200;
+                int soDem= (int) (15000-millisUntilFinished)/250;
                 for(int i=0;i<dsTienThuong.size();i++)
                 {
                     if(i==soDem){
@@ -69,28 +126,18 @@ public class StartActivity extends AppCompatActivity {
                         dsTienThuong.get(i).setBackgroundResource(R.drawable.textviewlayout);
                     }
                 }
-                btnStart.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent(StartActivity.this,MainActivity.class);
-                        startActivity(intent);
-                        new CountDownTimer(500, 500) {
-                            @Override
-                            public void onTick(long millisUntilFinished) {
-                                v.setBackgroundResource(R.drawable.sansang_click);
+                if(millisUntilFinished==5000){
 
-                            }
-
-                            @Override
-                            public void onFinish() {
-                                v.setBackgroundResource(R.drawable.sansang_layout);
-
-                            }
-                        }.start();
+                    namnam.setBackgroundResource(R.mipmap.namnam_uncheck);
+                }
+                if(millisUntilFinished==3000){
+                    goidienthoai.setBackgroundResource(R.mipmap.phone_nochecked);
+                }
+                if(millisUntilFinished==2000){
+                    hoiykienkhangia.setBackgroundResource(R.mipmap.hoiykien_nochecked);
+                }
 
 
-                    }
-                });
 
 
             }
@@ -125,7 +172,8 @@ public class StartActivity extends AppCompatActivity {
 
                     }
                 });
-//
+
+
                 new CountDownTimer(2400, 800) {
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -155,5 +203,40 @@ public class StartActivity extends AppCompatActivity {
 
 
 
+    }
+
+    protected void onStart() {
+        super.onStart();
+        Log.d("AAA","Start onStart");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("AAA","Start onRestart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("AAA","Start onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("AAA","Start on Pause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("AAA","Start  onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("AAA","Start onDestroy");
     }
 }
